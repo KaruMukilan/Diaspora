@@ -1,0 +1,35 @@
+<!-- ***************Login************************ -->
+<div class="modal-content">
+<div class="modal-header">Login</div>
+<div class="modal-body">
+<form class="modalForm form-inline" data-ng-submit="lData.auth()">
+	
+	<div data-ng-show="lData.message" class="alert alert-danger">
+	  {{lData.message}}
+	</div>
+	
+	<div class="form-group"> <!-- Username field -->
+		<input class="form-control" type="text" placeholder="Username" data-ng-model="lData.unauthUser.username"/>
+	</div>
+	
+	<div class="form-group"> <!-- Password field -->
+		<input class="form-control" type="password" placeholder="Password" data-ng-model="lData.unauthUser.password"/>
+	</div>
+	
+	<div class="form-group"> <!-- Login button -->
+		<button class="btn btn-primary" type="submit">Login</button>
+	</div>	
+	
+	<div class="form-group"> <!-- Remember Field -->
+		<div class="checkbox">
+			<label class="checkbox">
+				<input name="remember" type="checkbox" value="yes"/>
+				Remember
+			</label>
+		</div>
+	</div>
+	
+</form>
+</div>
+</div>
+<!-- ***************Login End************************ -->

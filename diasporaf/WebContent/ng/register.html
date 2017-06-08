@@ -1,0 +1,23 @@
+<div class="modal-content">
+<div class="modal-header">Register</div>
+<div class="modal-body">
+<form class="modalForm form-inline" data-ng-submit="rData.register()">
+	
+	<div data-ng-show="rData.message" class="alert alert-danger">
+	  {{rData.message}}
+	</div>
+	
+	<div class="form-group"> <!-- Username field -->
+		<input class="form-control" type="text" placeholder="Username" data-ng-model="rData.newUser.username"/>
+	</div>
+	
+	<div class="form-group"> <!-- Password field -->
+		<input class="form-control" type="password" placeholder="Password" data-ng-model="rData.newUser.password"/>
+	</div>
+	
+	<div class="form-group"> <!-- Login button -->
+		<button class="btn btn-primary" type="submit">Register</button>
+	</div>	
+</form>
+</div>
+</div>
