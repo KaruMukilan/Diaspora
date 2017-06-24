@@ -6,6 +6,7 @@ angular.module("DiasporaApp",[
                            'ngCookies',
                            'textAngular'
                            ]);
-/*
+
 angular.module("DiasporaApp").constant("loginUrl","login/");
-angular.module("DiasporaApp").constant("logoutUrl","logout/");*/
+angular.module("DiasporaApp").constant("logoutUrl","logout/");
+angular.module("DiasporaApp").constant("registerUrl","register/");

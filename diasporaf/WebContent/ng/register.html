@@ -8,13 +8,32 @@
 	</div>
 	
 	<div class="form-group"> <!-- Username field -->
-		<input class="form-control" type="text" placeholder="Username" data-ng-model="rData.newUser.username"/>
+		<input class="form-control" type="text" placeholder="Username"  data-ng-model="rData.newUser.username" ng-required/>
+		<!-- <span ng-show="rData.newUser.username.$touched && rData.newUser.username.$invalid">The name is required.</span> -->
+	</div>
+	<div>
+		<span ng-show="username.$touched && username.$invalid">The name is required.</span>
 	</div>
 	
 	<div class="form-group"> <!-- Password field -->
-		<input class="form-control" type="password" placeholder="Password" data-ng-model="rData.newUser.password"/>
+		<input class="form-control" type="email" placeholder="Email" data-ng-model="rData.newUser.email" ng-required/>
+		<span ng-show="rData.newUser.email.$touched && rData.newUser.email.$invalid">The email is required.</span>
+	</div>
+
+	<div class="form-group"> <!-- Password field -->
+		<input class="form-control" type="password" placeholder="Password" data-ng-model="rData.newUser.password" ng-required/>
+		<span ng-show="rData.newUser.username.$touched && rData.newUser.username.$invalid">The password is required.</span>
 	</div>
 	
+	<div class="form-group"> <!-- Password field -->
+		<input class="form-control" type="password" placeholder="confirm" data-ng-model="rData.newUser.confirm" ng-required/>
+	</div>	
+
+	<div class="form-group"> <!-- Password field -->
+		<input class="form-control" type="tel" placeholder="Password" data-ng-model="rData.newUser.contact"/>
+	</div>
+	
+		
 	<div class="form-group"> <!-- Login button -->
 		<button class="btn btn-primary" type="submit">Register</button>
 	</div>	
