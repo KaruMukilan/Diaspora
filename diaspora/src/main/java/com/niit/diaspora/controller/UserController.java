@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.niit.diaspora.impl.UserImpl;
 import com.niit.diaspora.model.User;
 
-@CrossOrigin(origins = {"http://localhost:8585"}, maxAge = 4800, allowCredentials = "false")
+@CrossOrigin(origins = {"http://localhost:8080"}, maxAge = 4800, allowCredentials = "false")
 @RestController
 @RequestMapping("user")
 public class UserController {
